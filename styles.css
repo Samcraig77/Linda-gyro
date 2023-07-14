@@ -91,14 +91,38 @@ hr {
     display: flex;
     margin-top: 100px;
     height: 600px;
-    
     justify-content: center;
     align-items: center;
 }
 
 .menu {
     margin-top: 100px;
-    height: 1000px;
+    padding: auto;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.placeholder {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background: white;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu div:last-child {
+    justify-items: center;
+    margin-left: 100%;
 
 }
 
