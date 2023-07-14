@@ -1,5 +1,5 @@
 * {
-    border:1px solid black;
+
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -91,7 +91,7 @@ hr {
     display: flex;
     margin-top: 100px;
     height: 600px;
-    background: #e4a26c;
+    
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +99,12 @@ hr {
 .menu {
     margin-top: 100px;
     height: 1000px;
+
+}
+
+.menu, .location, .about {
     background: #e4a26c;
+    box-shadow: 6px 12px black;
 }
 
 
