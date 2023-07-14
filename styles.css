@@ -19,7 +19,7 @@ body {
 );
 }
 
-.navigation {
+.header {
     /*positioning*/
 
     margin: 0 5% 10% 5%;
@@ -58,7 +58,6 @@ padding: 10px;
 
 .links {
     display: inline-flex;
-    padding: auto;
     align-items: center;
     gap: 30px;
     padding: 10px;
@@ -126,20 +125,36 @@ hr {
 
 }
 
-.menu, .location, .about {
+.email-notif {
+    display: block;
+    height: 100px;
+    margin: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.menu, .location, .about, .email-notif {
     background: #e4a26c;
     box-shadow: 6px 12px black;
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
 
-   .gyro-icon{
+   .gyro-icon {
     content-visibility: hidden;
    }
 
    .name {
     font-size: small;
    }
+
+   .menu  {
+       grid-template-columns: 1fr;
+   }
+
+   .menu div:last-child {
+    margin: auto;
+}
     
 }

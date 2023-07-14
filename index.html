@@ -7,20 +7,20 @@
     <title>Linda's Gyros and More!</title>
 </head>
 <body>
-    <nav class="navigation">
+    <header class="header" id="header">
         <div class="logo">
             <span>Logo!</span>
         </div>
         <div class="name">
             <span> Linda's Gyros and  More!</span>
-            <span id="img-container"><img class="gyro-icon" src="https://cdn0.iconfinder.com/data/icons/elasto-fast-food/26/06-FOOD-READY_gyros-pita-512.png" alt="An icon of a gyro"></span>
+            <span id="img-container"><img class="gyro-icon" id="header-img" src="https://cdn0.iconfinder.com/data/icons/elasto-fast-food/26/06-FOOD-READY_gyros-pita-512.png" alt="An icon of a gyro"></span>
         </div>
-        <div class="links">
-            <span id="about-link"><a href="#about">About us</a></span>
-            <span id="location-link"><a href="#location">Find us</a></span>
-            <span id="menu-link"><a href="#menu">Menu</a></span>
-        </div>
-    </nav>
+        <nav class="links" id="nav-bar">
+            <span  id="about-link"><a class="nav-link" href="#about">About us</a></span>
+            <span  id="location-link"><a class="nav-link" href="#location">Find us</a></span>
+            <span id="menu-link"  ><a class="nav-link" href="#menu">Menu</a></span>
+        </nav>
+    </header>
     <main class="main">
         <div>
     <div class="about">
@@ -33,6 +33,16 @@
     </div>
         
     <div class="location" id="location">
+        <iframe id="video"
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
       <div> A Google map would go here</div>
     </div>
         
@@ -44,9 +54,18 @@
         <div class="placeholder">Image placeholder</div>
         <div class="placeholder">Image placeholder</div>
         <div class="placeholder">Image placeholder</div>
-        
-        
     </div>
+
+<div class="email-notif">
+    <span>Sign up to get email notifications and deals from us!</span>
+    <div>
+<form  id="form" action="https://www.freecodecamp.com/email-submit">
+<label for="email">E-mail?</label>
+<input id="email" type="email" name="email" placeholder="Let us love you:">
+    <input id="submit" type="submit">
+    </div>
+</form>
+</div>
 </main>
     
 </body>
